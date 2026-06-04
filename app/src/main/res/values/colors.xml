@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Artesanos Color Palette -->
+    <color name="primary">#4CAF50</color> <!-- Verde Hoja -->
+    <color name="secondary">#8D6E63</color> <!-- Marrón Kraft -->
+    <color name="background">#FDFBF7</color> <!-- Blanco Roto -->
+    <color name="accent">#FF9800</color> <!-- Naranja Cálido -->
+    
+    <!-- Estado y validación -->
+    <color name="error">#D32F2F</color>
+    <color name="success">#388E3C</color>
+    
+    <!-- Utilities -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#BDBDBD</color>
 </resources>

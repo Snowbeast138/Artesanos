@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "175955122341",
+    "project_id": "movilesecommerce",
+    "storage_bucket": "movilesecommerce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175955122341:android:9b5f021bf370f8cf8f954c",
+        "android_client_info": {
+          "package_name": "com.example.atresanosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175955122341-gvviievvcpf3ill25qo3d3h8uneg456k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8OepvURCGmnlXK4bzpus1X1EWi641YA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175955122341-gvviievvcpf3ill25qo3d3h8uneg456k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175955122341:android:5431b2c0d0ccedfb8f954c",
+        "android_client_info": {
+          "package_name": "com.example.practica1movil2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175955122341-gvviievvcpf3ill25qo3d3h8uneg456k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8OepvURCGmnlXK4bzpus1X1EWi641YA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175955122341-gvviievvcpf3ill25qo3d3h8uneg456k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

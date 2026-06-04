@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adminInventoryFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Inventario" />
+    <item
+        android:id="@+id/adminOrdersFragment"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Pedidos" />
+    <item
+        android:id="@+id/adminRoutesFragment"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Rutas" />
+    <item
+        android:id="@+id/adminStatsFragment"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="Estadísticas" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Perfil" />
+</menu>

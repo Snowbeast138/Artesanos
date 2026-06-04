@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.atresanosapp.presentation.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.atresanosapp.presentation.auth.RegisterFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.atresanosapp.presentation.client.home.HomeFragment"
+        android:label="Catálogo"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.atresanosapp.presentation.client.home.ProductDetailFragment"
+        android:label="Detalle del Producto"
+        tools:layout="@layout/fragment_product_detail" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.atresanosapp.presentation.client.cart.CartFragment"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cartFragment_to_checkoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.atresanosapp.presentation.client.checkout.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" />
+
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.atresanosapp.presentation.client.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_clientOrdersFragment"
+            app:destination="@id/clientOrdersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_manageUsersFragment"
+            app:destination="@id/manageUsersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageUsersFragment"
+        android:name="com.example.atresanosapp.presentation.admin.users.ManageUsersFragment"
+        android:label="Administrar Usuarios"
+        tools:layout="@layout/fragment_manage_users" />
+
+    <fragment
+        android:id="@+id/clientOrdersFragment"
+        android:name="com.example.atresanosapp.presentation.client.orders.ClientOrdersFragment"
+        android:label="Mis Pedidos"
+        tools:layout="@layout/fragment_client_orders">
+        <action
+            android:id="@+id/action_clientOrdersFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.atresanosapp.presentation.client.profile.EditProfileFragment"
+        android:label="Editar Perfil"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfileFragment_to_mapLocationFragment"
+            app:destination="@id/mapLocationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapLocationFragment"
+        android:name="com.example.atresanosapp.presentation.client.profile.MapLocationFragment"
+        android:label="Ubicación"
+        tools:layout="@layout/fragment_map_location" />
+
+    <!-- Admin Flow -->
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.example.atresanosapp.presentation.admin.scanner.ScannerFragment"
+        android:label="Escáner"
+        tools:layout="@layout/fragment_scanner">
+        <action
+            android:id="@+id/action_scannerFragment_to_adminAddProductFragment"
+            app:destination="@id/adminAddProductFragment" />
+        <action
+            android:id="@+id/action_scannerFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminInventoryFragment"
+        android:name="com.example.atresanosapp.presentation.admin.inventory.AdminInventoryFragment"
+        android:label="Inventario"
+        tools:layout="@layout/fragment_admin_inventory">
+        <action
+            android:id="@+id/action_adminInventoryFragment_to_adminAddProductFragment"
+            app:destination="@id/adminAddProductFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminAddProductFragment"
+        android:name="com.example.atresanosapp.presentation.admin.inventory.AdminAddProductFragment"
+        android:label="Añadir Producto"
+        tools:layout="@layout/fragment_admin_add_product">
+        <action
+            android:id="@+id/action_adminAddProductFragment_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminOrdersFragment"
+        android:name="com.example.atresanosapp.presentation.admin.orders.AdminOrdersFragment"
+        android:label="Pedidos"
+        tools:layout="@layout/fragment_admin_orders">
+        <action
+            android:id="@+id/action_adminOrdersFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.atresanosapp.presentation.common.orders.OrderDetailFragment"
+        android:label="Detalle de Pedido"
+        tools:layout="@layout/fragment_order_detail">
+        <argument
+            android:name="pedidoId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminRoutesFragment"
+        android:name="com.example.atresanosapp.presentation.admin.routes.AdminRoutesFragment"
+        android:label="Rutas"
+        tools:layout="@layout/fragment_admin_routes" />
+
+    <fragment
+        android:id="@+id/adminStatsFragment"
+        android:name="com.example.atresanosapp.presentation.admin.stats.AdminStatsFragment"
+        android:label="Estadísticas"
+        tools:layout="@layout/fragment_admin_stats" />
+
+</navigation>

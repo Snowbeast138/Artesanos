@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Pedido: #ABC12345"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cv_payment_status" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/error"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            
+            <TextView
+                android:id="@+id/tv_payment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Sin Pago"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_order_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="Cliente: Juan Pérez"
+            android:textStyle="bold"
+            android:textColor="@color/secondary"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            tools:text="Entrega: 11/06/2026"
+            android:textColor="@color/secondary"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_client"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_delivery_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Estado: SOLICITADO"
+            android:textSize="14sp"
+            android:textColor="@color/secondary"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_date"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Total: $1500.00"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_delivery_status"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Abonado: $500.00"
+            android:textSize="14sp"
+            android:textColor="@color/primary"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_total"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_debt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Deuda: $1000.00"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/error"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_paid"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
