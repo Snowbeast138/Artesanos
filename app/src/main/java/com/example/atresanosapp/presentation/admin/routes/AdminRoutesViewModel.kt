@@ -25,7 +25,7 @@ class AdminRoutesViewModel : ViewModel() {
             val pendientes = mutableListOf<Pedido>()
 
             for (pedido in todos) {
-                if (pedido.estado != EstadoPedido.ENTREGADO) {
+                if (pedido.estado != EstadoPedido.ENTREGADO && pedido.estado != EstadoPedido.CANCELADO) {
                     pendientes.add(pedido)
                 }
             }
