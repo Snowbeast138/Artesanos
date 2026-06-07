@@ -4,7 +4,7 @@ name: Distribución a Firebase QA
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-distribute:
