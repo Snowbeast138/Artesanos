@@ -40,7 +40,6 @@ android {
             )
             signingConfig = signingConfigs.getByName("config")
         }
-        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
